@@ -1,42 +1,60 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-gray-600">
-                I&apos;m a passionate Full Stack Developer with a strong focus on creating
-                exceptional user experiences. With expertise in both frontend and
-                backend development, I bring ideas to life through clean, efficient code.
-              </p>
-              <p className="text-lg text-gray-600">
-                My journey in web development started [X] years ago, and since then,
-                I&apos;ve worked on various projects ranging from small business websites
-                to complex web applications.
-              </p>
+          <h2 className="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">About Me</h2>
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            {/* Profile Image - Left side on desktop, top on mobile */}
+            <div className="w-full md:w-1/3 flex justify-center">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-600 shadow-xl">
+                <Image
+                  src="/profile.jpg"
+                  alt="Mohamed"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            
+            {/* Content - Right side on desktop, bottom on mobile */}
+            <div className="w-full md:w-2/3 space-y-6">
+              <div className="space-y-6">
+                <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                  Hi, I'm Mohamed — Strategic Planning Analyst & General Manager at Madaar Solutions. I build and scale SaaS & e-commerce ventures, combining deep market insight with AI-powered tools. I help business owners turn complexity into growth with smart data strategies and automation.
+                </p>
+                <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                  My expertise lies in leveraging AI-powered tools and analytics to optimize business 
+                  operations, enhance customer experiences, and drive sustainable growth. I combine 
+                  strategic thinking with practical implementation to deliver measurable results.
+                </p>
+              </div>
               <div className="pt-6">
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Key Focus Areas</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['React', 'Next.js', 'Node.js', 'TypeScript', 'TailwindCSS', 'MongoDB'].map((skill) => (
+                  {[
+                    'Strategic Planning',
+                    'Business Growth',
+                    'Data Analytics',
+                    'AI Implementation',
+                    'SaaS Optimization',
+                    'E-commerce Strategy'
+                  ].map((skill) => (
                     <span
                       key={skill}
-                      className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+                      className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-4 py-2 rounded-full text-sm"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
               </div>
-            </div>
-            <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-              {/* Replace this div with your image */}
-              <span className="text-gray-500">Your Image Here</span>
             </div>
           </div>
         </div>
