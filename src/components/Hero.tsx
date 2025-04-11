@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm <span className="text-blue-400">Your Name</span>
+            Hi, I&apos;m <span className="text-blue-400">Your Name</span>
           </h1>
           <h2 className="text-2xl md:text-3xl mb-8 text-gray-300">
             Full Stack Developer & Designer

@@ -11,13 +11,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-600">
-                I'm a passionate Full Stack Developer with a strong focus on creating
+                I&apos;m a passionate Full Stack Developer with a strong focus on creating
                 exceptional user experiences. With expertise in both frontend and
                 backend development, I bring ideas to life through clean, efficient code.
               </p>
               <p className="text-lg text-gray-600">
                 My journey in web development started [X] years ago, and since then,
-                I've worked on various projects ranging from small business websites
+                I&apos;ve worked on various projects ranging from small business websites
                 to complex web applications.
               </p>
               <div className="pt-6">
