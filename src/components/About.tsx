@@ -15,7 +15,7 @@ const About = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-600 shadow-xl group hover:shadow-2xl transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
                 <Image
-                  src="/mohamed.jpg.png"
+                  src="/mohamed.jpg.png.png"
                   alt="Mohamed"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
