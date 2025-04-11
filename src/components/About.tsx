@@ -12,13 +12,26 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Profile Image - Left side on desktop, top on mobile */}
             <div className="w-full md:w-1/3 flex justify-center">
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-600 shadow-xl group hover:shadow-2xl transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500/80 dark:border-blue-600/80 shadow-xl group hover:shadow-2xl hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-500 animate-fadeIn">
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out" />
+                
+                {/* Shine Effect */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out">
+                  <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out" />
+                </div>
+
+                {/* Border Glow */}
+                <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out">
+                  <div className="absolute inset-[-4px] rounded-full bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 animate-borderGlow" />
+                </div>
+
+                {/* Image */}
                 <Image
                   src="/mohamed.jpg.png.png"
                   alt="Mohamed"
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-2"
                   priority
                 />
               </div>
