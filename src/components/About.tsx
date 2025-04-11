@@ -12,12 +12,13 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Profile Image - Left side on desktop, top on mobile */}
             <div className="w-full md:w-1/3 flex justify-center">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-600 shadow-xl">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-600 shadow-xl group hover:shadow-2xl transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
                 <Image
                   src="/mohamed.jpg.png"
                   alt="Mohamed"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   priority
                 />
               </div>
