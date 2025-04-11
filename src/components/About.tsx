@@ -27,7 +27,7 @@ const About = () => {
             <div className="w-full md:w-2/3 space-y-6">
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                  Hi, I'm Mohamed — Strategic Planning Analyst & General Manager at Madaar Solutions. I build and scale SaaS & e-commerce ventures, combining deep market insight with AI-powered tools. I help business owners turn complexity into growth with smart data strategies and automation.
+                  Hi, I&apos;m Mohamed — Strategic Planning Analyst & General Manager at Madaar Solutions. I build and scale SaaS & e-commerce ventures, combining deep market insight with AI-powered tools. I help business owners turn complexity into growth with smart data strategies and automation.
                 </p>
                 <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
                   My expertise lies in leveraging AI-powered tools and analytics to optimize business 

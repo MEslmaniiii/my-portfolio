@@ -30,7 +30,7 @@ const Contact = () => {
       } else {
         setStatus('error');
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
     }
   };
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-center text-gray-800 dark:text-white">Get In Touch</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12">
-            Have a project in mind? Let's discuss how we can work together to achieve your goals.
+            Have a project in mind? Let&apos;s discuss how we can work together to achieve your goals.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
